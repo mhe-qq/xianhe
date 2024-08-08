@@ -1,65 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人引导页</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>应用引导页</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            background: linear-gradient(to bottom, #4e54c8, #8f94fb);
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 30px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
         }
         h1 {
-            font-size: 3rem;
-            color: #007bff;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.2rem;
-            color: #555;
+            color: #fff;
             margin-bottom: 20px;
         }
-        .social-icons {
+        .description {
+            color: #f0f0f0;
+            margin-bottom: 30px;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin-top: 20px;
         }
-        .social-icons a {
+        .links a {
             display: inline-block;
-            margin: 0 10px;
-            color: #007bff;
-            font-size: 1.8rem;
             text-decoration: none;
-            transition: color 0.3s;
+            color: #fff;
+            padding: 12px 24px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            margin: 10px;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+            font-size: 16px;
         }
-        .social-icons a:hover {
-            color: #0056b3;
+        .links a:hover {
+            background-color: #fff;
+            color: #4e54c8;
+            border-color: #fff;
+        }
+        audio {
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>欢迎来到我的个人引导页</h1>
-        <p>我是[你的名字]，一名[你的职业或兴趣]。</p>
-        <p>你可以在以下平台找到我：</p>
-        <div class="social-icons">
-            <a href="https://github.com/yourusername" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://twitter.com/yourusername" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <!-- 可以根据需要添加其他社交媒体链接 -->
-        </div>
+    <h1>欢迎访问我们的引导页！</h1>
+    <p class="description">你可以通过以下链接访问我们推荐的应用：</p>
+    <div class="links">
+        <a href="https://im.qq.com" target="_blank">QQ</a>
+        <a href="https://www.xianyu.com" target="_blank">闲鱼</a>
+        <a href="https://www.coolapk.com" target="_blank">酷安</a>
     </div>
+    <audio controls autoplay loop>
+        <source src="/music.mp3" type="audio/mpeg">
+        您的浏览器不支持音频播放。
+    </audio>
+    <p>感谢你的访问！</p>
 </body>
 </html>
